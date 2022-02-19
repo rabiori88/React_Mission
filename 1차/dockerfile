@@ -1,0 +1,14 @@
+FROM node:16-alpine
+
+WORKDIR /usr/src/app
+
+COPY package.json ./
+
+RUN npm install
+
+COPY ./ ./
+
+CMD ["npm", "run", "start"]
+
+# 도커 명령어
+# docker run -p 4000:3000 sha256:e684d
