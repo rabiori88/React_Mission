@@ -11,4 +11,4 @@ COPY ./ ./
 CMD ["npm", "run", "start"]
 
 # 도커 명령어
-# docker run -p 4000:3000 sha256:e684d
+# docker run -p 4000:3000 sha256:e684d 
